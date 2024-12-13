@@ -1,0 +1,34 @@
+// -*- mode: jsonc -*-
+{
+	"layer": "top",
+	"position": "top",
+	"height": 8,
+	"width": 1920,
+	"spacing": 12,
+	"padding": 24,
+	"margin": 0,
+	"modules-left": [
+		"custom/rofi",
+		"custom/chrome",
+		"custom/vscode",
+		"custom/spotify",
+		"custom/webcord",
+		"custom/sublime",
+		"custom/tips"
+	],
+	"modules-center": [
+		"custom/name",
+		"hyprland/window"
+	],
+	"modules-right": [
+		"clock",
+		"pulseaudio",
+		"network",
+		"tray",
+		"hyprland/workspaces",
+		"custom/power-button"
+	],
+	"include": [
+		"~/.config/waybar/modules.json"
+	]
+}

@@ -1,0 +1,92 @@
+{
+  "custom/name": {
+    "format": "phd |",
+    "tooltip": true,
+    "tooltip-format": "Pedro Dominici",
+    "id": "waybar-name"
+  },
+  "hyprland/window": {
+    "format": "{initialTitle}"
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{name}"
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "{icon} {volume}%  {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "network": {
+    "format-wifi": "   {essid} ({signalStrength}%)",
+    "format-ethernet": " Ethernet ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "on-click": "sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
+  },
+  "clock": {
+    "format": "{:%H:%M - %e %B} ",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "custom/power-button": {
+    "format": " ",
+    "on-click": "wlogout -b 5",
+    "tooltip": false
+  },
+  "custom/chrome": {
+    "format": "󰊯 {}",
+    "on-click": "google-chrome-stable",
+    "tooltip": "Google Chrome"
+  },
+  "custom/vscode": {
+    "format": "󰨞 {}",
+    "on-click": "code",
+    "tooltip": "Visual Studio Code"
+  },
+  "custom/spotify": {
+    "format": "󰓇 {}",
+    "on-click": "spotify",
+    "tooltip": "Spotify"
+  },
+  "custom/webcord": {
+    "format": "󰙯 {}",
+    "on-click": "webcord",
+    "tooltip": "WebCord"
+  },
+  "custom/sublime": {
+    "format": "<span>󰆒 {}</span>",
+    "on-click": "subl",
+    "tooltip": "Sublime Text"
+  },
+  "custom/rofi": {
+    "format": "󰀘 {}",
+    "on-click": "rofi -show drun",
+    "tooltip": "Rofi"
+  },
+  "custom/tips": {
+    "format": "󰋼 {}",
+    "on-click": "xdotool key super+h",
+    "tooltip": "Tips (Win+H)"
+  }
+}

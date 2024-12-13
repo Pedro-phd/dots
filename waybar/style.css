@@ -1,0 +1,64 @@
+* {
+  /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
+  /* font-family: "JetBrainsMono NF", "JetBrains Mono NL", "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
+  font-size: 12px;
+  /* transition: background-color .3s ease-out; */
+}
+
+
+window#waybar {
+  background: transparent;
+  color: #fff;
+  font-family:
+    BlexMono Nerd Font,
+    JetBrainsMono NF,
+    JetBrains Mono NL,
+    SpaceMono Nerd Font,
+    feather;
+  /* transition: background-color .5s; */
+}
+
+#waybar {
+  /* background-color: rgba(28, 28, 30, 0.50); */
+  /* border-bottom: 1px solid #000000; */
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 9px 18px;
+  background-color: rgba(0, 0, 0, 0.30);
+  border: 1px solid rgba(0, 0, 0, 0.60);
+  padding: 0 18px;
+  border-radius: 12px;
+}
+
+.modules-left {
+  font-size: 24px;
+}
+
+#workspaces button {
+  background: transparent;
+  font-weight: 900;
+  font-size: 13pt;
+  border-radius: 8px;
+  margin: 5px;
+
+}
+
+#workspaces button.active {
+  background: rgba(255, 255, 255, .1);
+}
+
+#workspaces button:hover {
+  background: rgba(255, 255, 255, .3);
+}
+
+#waybar-name {
+  font-weight: 800;
+}
+
+.modules-left span:hover,
+#custom-sublime:hover {
+  color: red;
+}
